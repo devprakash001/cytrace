@@ -1,11 +1,10 @@
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
-import { Shield, Users, Award, Globe, CheckCircle } from "lucide-react"
+import { Shield, Users, Award, Target, CheckCircle } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
 
-export default function AboutUs() {
+export default function About() {
   return (
     <div className="min-h-screen bg-black text-white">
       <Navbar />
@@ -19,139 +18,102 @@ export default function AboutUs() {
               About Cytrace
             </Badge>
             <h1 className="text-4xl sm:text-6xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-              Securing the Digital Future
+              Leading Cybersecurity Excellence
             </h1>
             <p className="text-xl text-gray-400 max-w-4xl mx-auto leading-relaxed">
-              Cytrace is a leading cybersecurity company dedicated to protecting organizations from evolving cyber
-              threats. With our team of expert security professionals and cutting-edge technologies, we provide
-              comprehensive security solutions tailored to your unique needs.
+              Cytrace is a premier cybersecurity solutions provider dedicated to protecting businesses from evolving
+              digital threats. With years of expertise and a commitment to excellence, we deliver comprehensive security
+              services that safeguard your digital assets and ensure business continuity.
             </p>
           </div>
         </section>
 
-        {/* Our Story */}
-        <section className="px-4 sm:px-6 py-16 bg-gradient-to-r from-gray-900/50 to-black/50">
+        {/* Mission & Vision */}
+        <section className="px-4 sm:px-6 py-16">
           <div className="max-w-6xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div>
-                <Badge className="mb-6 bg-cyan-500/20 text-cyan-400 border-cyan-500/50">Our Story</Badge>
-                <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-white">
-                  A Decade of Excellence in Cybersecurity
-                </h2>
-                <div className="space-y-4 text-gray-400">
-                  <p>
-                    Founded in 2014, Cytrace began with a simple mission: to make the digital world safer for businesses
-                    and individuals alike. What started as a small team of passionate security researchers has grown
-                    into a global cybersecurity powerhouse.
+            <div className="grid md:grid-cols-2 gap-12">
+              <Card className="bg-gray-900/50 border-cyan-500/20 hover:border-cyan-500/50 transition-all duration-300">
+                <CardContent className="p-8">
+                  <div className="flex items-center mb-6">
+                    <Target className="w-8 h-8 text-cyan-400 mr-3" />
+                    <h2 className="text-3xl font-bold text-white">Our Mission</h2>
+                  </div>
+                  <p className="text-gray-400 text-lg leading-relaxed">
+                    To provide world-class cybersecurity solutions that empower organizations to operate securely in the
+                    digital age. We are committed to delivering innovative, reliable, and comprehensive security
+                    services that protect our clients' most valuable digital assets while enabling their business growth
+                    and success.
                   </p>
-                  <p>
-                    Our journey has been defined by continuous innovation, unwavering commitment to excellence, and a
-                    deep understanding of the evolving threat landscape. We've helped thousands of organizations
-                    strengthen their security posture and protect their most valuable digital assets.
+                </CardContent>
+              </Card>
+
+              <Card className="bg-gray-900/50 border-blue-500/20 hover:border-blue-500/50 transition-all duration-300">
+                <CardContent className="p-8">
+                  <div className="flex items-center mb-6">
+                    <Award className="w-8 h-8 text-blue-400 mr-3" />
+                    <h2 className="text-3xl font-bold text-white">Our Vision</h2>
+                  </div>
+                  <p className="text-gray-400 text-lg leading-relaxed">
+                    To be the global leader in cybersecurity services, setting the standard for excellence in threat
+                    detection, prevention, and response. We envision a world where businesses can innovate and grow
+                    without fear of cyber threats, supported by our cutting-edge security solutions and expert guidance.
                   </p>
-                  <p>
-                    Today, Cytrace stands at the forefront of the cybersecurity industry, combining human expertise with
-                    advanced technologies to deliver unparalleled protection against even the most sophisticated cyber
-                    threats.
-                  </p>
-                </div>
-              </div>
-              <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 border border-cyan-500/20">
-                <h3 className="text-white font-bold text-xl mb-6">Our Milestones</h3>
-                <div className="space-y-4">
-                  <div className="flex items-start space-x-3">
-                    <div className="bg-cyan-500/20 p-2 rounded-full mt-1">
-                      <Shield className="w-4 h-4 text-cyan-400" />
-                    </div>
-                    <div>
-                      <h4 className="text-white font-semibold">2014</h4>
-                      <p className="text-gray-400 text-sm">Founded with a focus on penetration testing services</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <div className="bg-cyan-500/20 p-2 rounded-full mt-1">
-                      <Shield className="w-4 h-4 text-cyan-400" />
-                    </div>
-                    <div>
-                      <h4 className="text-white font-semibold">2016</h4>
-                      <p className="text-gray-400 text-sm">Expanded to offer comprehensive security assessments</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <div className="bg-cyan-500/20 p-2 rounded-full mt-1">
-                      <Shield className="w-4 h-4 text-cyan-400" />
-                    </div>
-                    <div>
-                      <h4 className="text-white font-semibold">2018</h4>
-                      <p className="text-gray-400 text-sm">Launched managed security services division</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <div className="bg-cyan-500/20 p-2 rounded-full mt-1">
-                      <Shield className="w-4 h-4 text-cyan-400" />
-                    </div>
-                    <div>
-                      <h4 className="text-white font-semibold">2020</h4>
-                      <p className="text-gray-400 text-sm">Developed proprietary threat intelligence platform</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <div className="bg-cyan-500/20 p-2 rounded-full mt-1">
-                      <Shield className="w-4 h-4 text-cyan-400" />
-                    </div>
-                    <div>
-                      <h4 className="text-white font-semibold">2023</h4>
-                      <p className="text-gray-400 text-sm">Expanded globally with offices in 12 countries</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </section>
 
-        {/* Our Values */}
-        <section className="px-4 sm:px-6 py-16">
+        {/* Core Values */}
+        <section className="px-4 sm:px-6 py-16 bg-gradient-to-r from-gray-900/50 to-black/50">
           <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-12">
-              <Badge className="mb-6 bg-cyan-500/20 text-cyan-400 border-cyan-500/50">Our Values</Badge>
-              <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-white">What Drives Us</h2>
-              <p className="text-lg text-gray-400 max-w-3xl mx-auto">
-                Our core values shape everything we do at Cytrace, from how we develop our services to how we interact
-                with our clients and partners.
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <h2 className="text-3xl font-bold text-center mb-12 text-white">Our Core Values</h2>
+            <div className="grid md:grid-cols-3 gap-8">
               {[
                 {
-                  icon: Shield,
-                  title: "Integrity",
-                  description: "We uphold the highest ethical standards in all our operations and relationships.",
-                },
-                {
-                  icon: Users,
-                  title: "Collaboration",
-                  description: "We work closely with our clients to develop tailored security solutions.",
-                },
-                {
-                  icon: Award,
                   title: "Excellence",
-                  description: "We strive for excellence in every aspect of our security services.",
+                  description:
+                    "We strive for perfection in every service we deliver, maintaining the highest standards of quality and professionalism.",
+                  icon: Award,
                 },
                 {
-                  icon: Globe,
                   title: "Innovation",
-                  description: "We continuously innovate to stay ahead of evolving cyber threats.",
+                  description:
+                    "We continuously evolve our solutions to stay ahead of emerging threats and provide cutting-edge security technologies.",
+                  icon: Target,
+                },
+                {
+                  title: "Integrity",
+                  description:
+                    "We operate with complete transparency, honesty, and ethical standards in all our client relationships and business practices.",
+                  icon: Shield,
+                },
+                {
+                  title: "Expertise",
+                  description:
+                    "Our team consists of certified professionals with deep knowledge and extensive experience in cybersecurity.",
+                  icon: Users,
+                },
+                {
+                  title: "Partnership",
+                  description:
+                    "We build long-term relationships with our clients, working as trusted advisors to secure their digital future.",
+                  icon: CheckCircle,
+                },
+                {
+                  title: "Reliability",
+                  description:
+                    "Our clients depend on us for consistent, dependable security services that protect their business 24/7.",
+                  icon: Shield,
                 },
               ].map((value, index) => (
                 <Card
                   key={index}
-                  className="bg-gray-900/50 border-cyan-500/20 hover:border-cyan-500/50 transition-all duration-300"
+                  className="bg-gray-900/50 border-cyan-500/20 hover:border-cyan-500/50 transition-all duration-300 group"
                 >
                   <CardContent className="p-6 text-center">
-                    <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-br from-cyan-500/20 to-blue-500/20 rounded-full mb-4">
-                      <value.icon className="w-6 h-6 text-cyan-400" />
+                    <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-cyan-500/20 to-blue-500/20 rounded-full mb-6 group-hover:scale-110 transition-transform duration-300">
+                      <value.icon className="w-8 h-8 text-cyan-400" />
                     </div>
                     <h3 className="text-xl font-bold text-white mb-4">{value.title}</h3>
                     <p className="text-gray-400">{value.description}</p>
@@ -162,182 +124,69 @@ export default function AboutUs() {
           </div>
         </section>
 
-        {/* Leadership Team */}
-        <section className="px-4 sm:px-6 py-16 bg-gradient-to-r from-gray-900/50 to-black/50">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-12">
-              <Badge className="mb-6 bg-cyan-500/20 text-cyan-400 border-cyan-500/50">Our Leadership</Badge>
-              <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-white">Meet Our Leadership Team</h2>
-              <p className="text-lg text-gray-400 max-w-3xl mx-auto">
-                Our leadership team brings decades of combined experience in cybersecurity, technology, and business
-                management.
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {[
-                {
-                  name: "Sarah Johnson",
-                  role: "Chief Executive Officer",
-                  bio: "With over 20 years of experience in cybersecurity, Sarah leads our global strategy and operations.",
-                  expertise: ["Strategic Leadership", "Cybersecurity Vision", "Business Growth"],
-                },
-                {
-                  name: "Michael Chen",
-                  role: "Chief Technology Officer",
-                  bio: "Michael oversees our technology development and ensures we stay at the cutting edge of cybersecurity innovation.",
-                  expertise: ["Security Architecture", "AI & Machine Learning", "Threat Intelligence"],
-                },
-                {
-                  name: "Aisha Patel",
-                  role: "Chief Security Officer",
-                  bio: "Aisha leads our security operations and ensures the highest standards in our service delivery.",
-                  expertise: ["Security Operations", "Risk Management", "Compliance"],
-                },
-                {
-                  name: "David Rodriguez",
-                  role: "VP of Consulting Services",
-                  bio: "David heads our consulting division, bringing expert security guidance to our clients worldwide.",
-                  expertise: ["Security Assessments", "Strategic Consulting", "Client Relations"],
-                },
-                {
-                  name: "Emma Wilson",
-                  role: "Director of Research",
-                  bio: "Emma leads our research team in discovering new threats and developing innovative security solutions.",
-                  expertise: ["Vulnerability Research", "Exploit Development", "Security Tools"],
-                },
-                {
-                  name: "James Thompson",
-                  role: "VP of Global Sales",
-                  bio: "James drives our global sales strategy and ensures we meet the needs of clients across industries.",
-                  expertise: ["Enterprise Security", "Solution Design", "Client Success"],
-                },
-              ].map((leader, index) => (
-                <Card
-                  key={index}
-                  className="bg-gray-900/50 border-cyan-500/20 hover:border-cyan-500/50 transition-all duration-300"
-                >
-                  <CardContent className="p-6">
-                    <div className="w-20 h-20 bg-gradient-to-br from-cyan-500/30 to-blue-500/30 rounded-full mb-4 flex items-center justify-center">
-                      <span className="text-2xl font-bold text-cyan-400">{leader.name.charAt(0)}</span>
-                    </div>
-                    <h3 className="text-xl font-bold text-white mb-1">{leader.name}</h3>
-                    <p className="text-cyan-400 text-sm mb-4">{leader.role}</p>
-                    <p className="text-gray-400 text-sm mb-4">{leader.bio}</p>
-                    <div>
-                      <h4 className="text-xs font-semibold text-gray-500 mb-2">EXPERTISE</h4>
-                      <div className="flex flex-wrap gap-2">
-                        {leader.expertise.map((skill, idx) => (
-                          <Badge key={idx} className="bg-cyan-500/10 text-cyan-400 text-xs">
-                            {skill}
-                          </Badge>
-                        ))}
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </section>
-
         {/* Why Choose Us */}
         <section className="px-4 sm:px-6 py-16">
           <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-12">
-              <Badge className="mb-6 bg-cyan-500/20 text-cyan-400 border-cyan-500/50">Why Choose Us</Badge>
-              <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-white">The Cytrace Difference</h2>
-              <p className="text-lg text-gray-400 max-w-3xl mx-auto">
-                What sets us apart in the cybersecurity landscape and why leading organizations trust us with their
-                security needs.
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="space-y-6">
-                {[
-                  {
-                    title: "Expert Team",
-                    desc: "Our team includes certified security professionals with diverse industry experience",
-                  },
-                  {
-                    title: "Comprehensive Approach",
-                    desc: "We provide end-to-end security solutions tailored to your specific needs",
-                  },
-                  {
-                    title: "Advanced Technology",
-                    desc: "We leverage cutting-edge technologies and proprietary tools for superior protection",
-                  },
-                  {
-                    title: "Proven Track Record",
-                    desc: "We have successfully secured thousands of organizations across industries",
-                  },
-                ].map((item, index) => (
-                  <div key={index} className="flex items-start space-x-4">
-                    <div className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold">
-                      <CheckCircle className="w-5 h-5" />
+            <h2 className="text-3xl font-bold text-center mb-12 text-white">Why Choose Cytrace</h2>
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div>
+                <div className="space-y-6">
+                  {[
+                    {
+                      title: "Proven Track Record",
+                      desc: "Over 10,000 successful security assessments and implementations",
+                    },
+                    {
+                      title: "Expert Team",
+                      desc: "Certified professionals with decades of combined cybersecurity experience",
+                    },
+                    {
+                      title: "Comprehensive Solutions",
+                      desc: "End-to-end security services from assessment to implementation",
+                    },
+                    { title: "24/7 Support", desc: "Round-the-clock monitoring and incident response capabilities" },
+                    {
+                      title: "Industry Recognition",
+                      desc: "Award-winning services recognized by leading industry organizations",
+                    },
+                  ].map((item, index) => (
+                    <div key={index} className="flex items-start space-x-4">
+                      <div className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">
+                        ✓
+                      </div>
+                      <div>
+                        <h3 className="text-white font-semibold mb-2">{item.title}</h3>
+                        <p className="text-gray-400">{item.desc}</p>
+                      </div>
                     </div>
-                    <div>
-                      <h3 className="text-white font-semibold mb-2">{item.title}</h3>
-                      <p className="text-gray-400">{item.desc}</p>
-                    </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
-              <div className="space-y-6">
-                {[
-                  {
-                    title: "Client-Centric Approach",
-                    desc: "We prioritize your security needs and business objectives in everything we do",
-                  },
-                  {
-                    title: "Continuous Innovation",
-                    desc: "We constantly evolve our services to address emerging threats and challenges",
-                  },
-                  {
-                    title: "Global Presence",
-                    desc: "We provide consistent security services and support across global operations",
-                  },
-                  {
-                    title: "Industry Recognition",
-                    desc: "We are recognized as leaders by industry analysts and security communities",
-                  },
-                ].map((item, index) => (
-                  <div key={index} className="flex items-start space-x-4">
-                    <div className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold">
-                      <CheckCircle className="w-5 h-5" />
-                    </div>
-                    <div>
-                      <h3 className="text-white font-semibold mb-2">{item.title}</h3>
-                      <p className="text-gray-400">{item.desc}</p>
-                    </div>
+              <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 border border-cyan-500/20">
+                <h3 className="text-white font-bold text-xl mb-6">Company Statistics</h3>
+                <div className="space-y-6">
+                  <div className="flex justify-between items-center">
+                    <span className="text-gray-400">Years of Experience</span>
+                    <span className="text-2xl font-bold text-cyan-400">15+</span>
                   </div>
-                ))}
+                  <div className="flex justify-between items-center">
+                    <span className="text-gray-400">Clients Served</span>
+                    <span className="text-2xl font-bold text-cyan-400">10,000+</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="text-gray-400">Security Experts</span>
+                    <span className="text-2xl font-bold text-cyan-400">200+</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="text-gray-400">Countries Served</span>
+                    <span className="text-2xl font-bold text-cyan-400">50+</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="text-gray-400">Threats Prevented</span>
+                    <span className="text-2xl font-bold text-cyan-400">1M+</span>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        </section>
-
-        {/* CTA Section */}
-        <section className="px-4 sm:px-6 py-16 bg-gradient-to-r from-gray-900/50 to-black/50">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-              Ready to Secure Your Digital Assets?
-            </h2>
-            <p className="text-xl text-gray-400 mb-8">
-              Partner with Cytrace for comprehensive cybersecurity solutions tailored to your organization's unique
-              needs.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-lg px-8 py-4">
-                Contact Our Team
-              </Button>
-              <Button
-                variant="outline"
-                className="border-cyan-500/50 text-cyan-400 hover:bg-cyan-500/10 text-lg px-8 py-4"
-              >
-                Explore Services
-              </Button>
             </div>
           </div>
         </section>
