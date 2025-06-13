@@ -63,8 +63,6 @@ export default function CybersecurityWebsite() {
         </div>
       </div>
 
-      <Navbar />
-
       {/* Hero Section */}
       <section className="relative z-10 min-h-screen flex items-center justify-center px-4 sm:px-6 pt-20">
         <div className="text-center max-w-6xl mx-auto">
@@ -242,8 +240,11 @@ export default function CybersecurityWebsite() {
           </div>
         </div>
       </section>
+      <div className="relative z-10 py-12 sm:py-20 px-4 sm:px-6 bg-gray-900/50">
+        
+      <Footer  />
+      </div>
 
-      <Footer />
     </div>
   )
 }
