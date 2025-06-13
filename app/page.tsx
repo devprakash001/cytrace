@@ -38,18 +38,28 @@ export default function CybersecurityWebsite() {
       <div className="fixed inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-br from-black via-gray-900 to-black"></div>
         <div className="absolute inset-0 opacity-20">
-          {[...Array(50)].map((_, i) => (
-            <div
-              key={i}
-              className="absolute w-1 h-1 bg-cyan-400 rounded-full animate-pulse"
-              style={{
-                left: `${Math.random() * 100}%`,
-                top: `${Math.random() * 100}%`,
-                animationDelay: `${Math.random() * 3}s`,
-                animationDuration: `${2 + Math.random() * 3}s`,
-              }}
-            />
-          ))}
+          {[...Array(50)].map((_, i) => {
+            // Use deterministic values based on index
+            const angle = (i * 137.5) % 360; // Golden angle
+            const radius = 40 + (i * 0.5); // Increasing radius
+            const left = 50 + radius * Math.cos(angle * Math.PI / 180);
+            const top = 50 + radius * Math.sin(angle * Math.PI / 180);
+            const delay = (i * 0.1) % 3; // Sequential delays
+            const duration = 2 + (i % 3); // Alternating durations
+
+            return (
+              <div
+                key={i}
+                className="absolute w-1 h-1 bg-cyan-400 rounded-full animate-pulse"
+                style={{
+                  left: `${left}%`,
+                  top: `${top}%`,
+                  animationDelay: `${delay}s`,
+                  animationDuration: `${duration}s`,
+                }}
+              />
+            );
+          })}
         </div>
       </div>
 
