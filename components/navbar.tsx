@@ -108,6 +108,7 @@ export default function Navbar() {
 
   const companyPages = [
     { name: "About Us", href: "/company/about" },
+    { name: "Contact Us", href: "/company/contact-us" },
     { name: "Careers", href: "/company/careers" },
     { name: "Our Clients", href: "/company/clients" },
     { name: "Media", href: "/company/media" },
@@ -606,7 +607,7 @@ export default function Navbar() {
       </motion.nav>
 
       {/* Spacer to prevent content from being hidden under the navbar */}
-      <div className="h-10"></div>
+      
     </>
   )
 }
