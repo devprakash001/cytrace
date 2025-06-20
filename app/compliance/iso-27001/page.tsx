@@ -16,10 +16,10 @@ export default function ISO27001() {
           <div className="max-w-6xl mx-auto text-center">
             <Badge className="mb-6 bg-purple-500/20 text-purple-400 border-purple-500/50">
               <Award className="w-4 h-4 mr-2" />
-              ISO/IEC 27001
+              ISO 27001
             </Badge>
             <h1 className="text-4xl sm:text-6xl font-bold mb-6 bg-gradient-to-r from-purple-400 to-blue-500 bg-clip-text text-transparent">
-              ISO/IEC 27001:2022 Compliance
+              ISO 27001:2022 Compliance
             </h1>
             <p className="text-xl text-gray-400 max-w-4xl mx-auto leading-relaxed">
               ISO 27001:2022 is the updated international standard for information security management systems (ISMS).
