@@ -606,7 +606,6 @@ export default function Navbar() {
       </motion.nav>
 
       {/* Spacer to prevent content from being hidden under the navbar */}
-      <div className="h-10"></div>
     </>
   )
 }
