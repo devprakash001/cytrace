@@ -81,7 +81,7 @@ export default function Navbar() {
   const complianceServices = [
     { name: "GDPR", href: "/compliance/gdpr" },
     { name: "HIPAA", href: "/compliance/hipaa" },
-    { name: "ISO/IEC 27001", href: "/compliance/iso-27001" },
+    { name: "ISO 27001", href: "/compliance/iso-27001" },
     { name: "PCI-DSS", href: "/compliance/pci-dss" },
     { name: "Compliance-as-a-Service", href: "/compliance/caas" },
     { name: "RBI Compliance", href: "/compliance/rbi" },
